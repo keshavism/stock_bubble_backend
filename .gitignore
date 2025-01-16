@@ -1,0 +1,32 @@
+# Node.js build artifacts
+node_modules/
+build/
+public/
+keys.json
+# Logs and debugging files
+*.log
+*.log.*
+*.debug.log
+
+# Environment variables
+.env
+
+# IDE-specific files and folders
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# macOS files
+.DS_Store
+Thumbs.db
+
+# Compiled output
+dist/
+
+# Dependency lock files
+yarn.lock
+package-lock.json
+
+Searching

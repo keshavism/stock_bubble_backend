@@ -1,0 +1,8 @@
+const express = require("express");
+const router = express.Router();
+
+const stocksRoute = require("../routes/stocks_route");
+
+router.use("/api/v1/stocks", stocksRoute);
+
+module.exports = router;

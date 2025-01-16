@@ -1,0 +1,7 @@
+const ErrorCodes = {
+  INVALID_EMAIL: "INVALID_EMAIL",
+  ACCOUNT_NOT_VERIFIED: "ACCOUNT_NOT_VERIFIED",
+  INVALID_PASSWORD: "INVALID_PASSWORD",
+};
+
+module.exports = ErrorCodes;
