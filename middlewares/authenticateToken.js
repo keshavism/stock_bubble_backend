@@ -1,10 +1,5 @@
 const jwt = require("jsonwebtoken");
-const {
-  JWT_USER_SECRET,
-  JWT_WAREHOUSE_SECRET,
-  JWT_MUMBAI_WAREHOUSE_SECRET,
-  JWT_ADMIN_SECRET,
-} = require("../config/server.config");
+const { JWT_ADMIN_SECRET } = require("../config/server.config");
 
 const authToken = (secret) => {
   return (req, res, next) => {
@@ -30,14 +25,8 @@ const authToken = (secret) => {
   };
 };
 
-const userAuthToken = authToken(JWT_USER_SECRET);
-const mumbaiWarehouseAuthToken = authToken(JWT_MUMBAI_WAREHOUSE_SECRET);
-const warehouseAuthToken = authToken(JWT_WAREHOUSE_SECRET);
 const adminAuthToken = authToken(JWT_ADMIN_SECRET);
 
 module.exports = {
-  userAuthToken,
-  mumbaiWarehouseAuthToken,
-  warehouseAuthToken,
   adminAuthToken,
 };

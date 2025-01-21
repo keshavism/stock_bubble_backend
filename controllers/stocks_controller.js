@@ -579,6 +579,23 @@ const searchStocksByName = async (req, res) => {
     return res.status(500).json({ message: "Internal Server Error" });
   }
 };
+const signin = async (req, res, next) => {
+  try {
+    const token = jwt.sign(
+      { id: 1, email: "stockbubble@gmail.com" },
+      JWT_ADMIN_SECRET,
+      { expiresIn: "365d" }
+    );
+
+    res.status(200).json({ success: true, token });
+  } catch (error) {
+    console.log("error in signin in", error);
+    if (error == "")
+      res
+        .status(500)
+        .json({ message: "Internal Server Error", success: false });
+  }
+};
 module.exports = {
   updateStockData,
   getStocksByIndex,
@@ -589,4 +606,5 @@ module.exports = {
   updateDailyData,
   updateDailyHistoricalData,
   searchStocksByName,
+  signin,
 };
