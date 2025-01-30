@@ -11,7 +11,7 @@ const DB_DETAILS = {
   timeout: 120000, // 120 seconds
 };
 const ACCESS_TOKEN =
-  "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkaGFuIiwicGFydG5lcklkIjoiIiwiZXhwIjoxNzM3MzYyMzI0LCJ0b2tlbkNvbnN1bWVyVHlwZSI6IlNFTEYiLCJ3ZWJob29rVXJsIjoiIiwiZGhhbkNsaWVudElkIjoiMTEwMDM3MzQ5MSJ9.XYaAF4wHy3gQCFARROKD4NFGWyCWTLvK2id9kWWYe1NFS6iAV609IsrcIg4rUIVgpYIhv7p6mSSro7XqSNxV4A";
+  "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkaGFuIiwicGFydG5lcklkIjoiIiwiZXhwIjoxNzQwNzQxOTU2LCJ0b2tlbkNvbnN1bWVyVHlwZSI6IlNFTEYiLCJ3ZWJob29rVXJsIjoiIiwiZGhhbkNsaWVudElkIjoiMTEwMDM3MzQ5MSJ9.BfoM1E_rpgOttHJgr-w6oXPVny-B9M9pdmO0BzyJYPf3y_alzMrYJQ0WuaqZ31PlYRg5r6__O5C5uhW1lfqqJg";
 
 module.exports = {
   PORT: PORT,
